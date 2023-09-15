@@ -531,9 +531,11 @@ a {
 /* =========== Subscribe =========== */
 .subscribe {
   margin-top: 82px;
-  position: relative;
 }
 
+.subscribe .content {
+  position: relative;
+}
 .subscribe .body {
   width: 100%;
   height: 378px;
