@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -39,6 +44,7 @@ a {
 
 .btn:hover {
   opacity: 0.9;
+  cursor: pointer;
 }
 
 .line-clamp {
@@ -51,11 +57,18 @@ a {
 .header {
   position: relative;
   background: #e6f0ff;
-  height: 100vh;
-  padding-top: 38px;
+  height: calc(100vh - 90px);
 }
 
 /* ======== Navbar ========= */
+.wrap-navbar {
+  position: sticky;
+  top: -20px;
+  padding: 30px 20px 10px;
+  background: #e6f0ff;
+  z-index: 1;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -69,6 +82,8 @@ a {
 .navbar ul a {
   padding: 0 1.4rem;
   color: #4f5361;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .navbar ul a:hover {
@@ -91,7 +106,10 @@ a {
 
 /* ========== Hero =========== */
 .hero {
-  margin-top: 130px;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero .info {
