@@ -152,7 +152,23 @@ a {
   justify-content: space-between;
   margin-top: 70px;
 }
+.client .logos li img {
+  max-width: 150px;
+  height: 50px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  object-fit: contain;
+}
+.client .logos li:nth-of-type(3) img {
+  padding: 5px 10px;
+  border-radius: 15px;
+}
 
+.client .logos li:hover img {
+  box-shadow: 0 20px 40px -4px rgba(0, 0, 0, 0.1);
+  scale: 1.2;
+}
 .client .content-client p {
   color: #7d8589;
   font-size: 1.6rem;
